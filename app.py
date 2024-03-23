@@ -11,7 +11,7 @@ from flask_migrate import Migrate
 # uuid - to generate a random public_id
 app = Flask(__name__)
 
-app.config["SECRETE_KEY"] = ""
+app.config["SECRETE_KEY"] = "hehaslargebrain"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///todo.db"
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
